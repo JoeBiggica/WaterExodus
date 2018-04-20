@@ -1,0 +1,90 @@
+@import '../../scss/config';
+
+.container {
+	padding: 0 $screen-edge-large;
+
+	@include breakpoint($narrow-browser-and-phone) {
+		padding: 0 $screen-edge-small;
+	}
+
+	.content {
+		padding: $y-space-large 0;
+		display: flex;
+		align-items: center;
+
+		.copy {
+			.title {
+				@include gothic-bold;
+				font-size: 74px;
+				text-shadow: 4px 4px 4px #000;
+				margin-bottom: 30px;
+			}
+			.text {
+				@include gothic-bold;
+				font-size: 28px;
+
+				&.small {
+					font-size: 16px;
+					line-height: 1.5;
+				}
+			}	
+		}
+
+		.button {
+			@include grey-black-button;
+			margin-top: 30px;
+		}
+
+		.image {
+			width: 341px;
+			height: 211px;
+			flex: none;
+			margin-left: 30px;
+			img {
+				width: 100%;
+			}
+		}
+
+		@include breakpoint($portrait-tablet-and-below) {
+			flex-direction: column;
+
+			.copy {
+				.title {
+					font-size: 52px;
+				}
+			}
+
+			.image {
+				margin: 20px 0 0;
+				align-self: flex-start;
+			}
+		}
+
+		@include breakpoint($narrow-browser-and-phone) {
+			.copy {
+				.title {
+					font-size: 30px;
+				}
+				.text {
+					font-size: 14px;
+
+					&.small {
+						font-size: 14px;
+						line-height: 1.5;
+					}
+				}	
+			}
+
+			.image {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+
+	.center {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+}

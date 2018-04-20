@@ -1,0 +1,25 @@
+@mixin gothic-light {
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, 'Didact Gothic', sans-serif;	
+	-webkit-font-smoothing: antialiased;
+}
+
+@mixin gothic-regular {
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, 'Didact Gothic', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+@mixin gothic-bold {
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, 'Didact Gothic', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-weight: bold
+}
+
+@mixin serif-regular {
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, 'Didact Gothic', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+@mixin serif-medium {
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, 'Didact Gothic', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}

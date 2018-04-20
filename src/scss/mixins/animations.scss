@@ -1,0 +1,44 @@
+@mixin transition-hidden($duration, $properties) {
+  $transition-property: visibility;
+
+  visibility: hidden;
+  pointer-events: none;
+  transition: $duration $default-easing;
+
+  @each $property, $value in $properties {
+    #{$property}: $value;
+    $transition-property: $transition-property, $property;
+  }
+
+  transition-property: $transition-property;
+}
+
+@mixin transition-visible() {
+  visibility: visible;
+  pointer-events: auto;
+  @content;
+}
+
+@mixin hoverToOrangeText() {
+  transition: color .35s $easeOutExpo;
+
+  &:hover{
+    color: $orange;
+  }
+}
+
+@mixin hoverToBlackText() {
+  transition: color .35s $easeOutExpo;
+
+  &:hover{
+    color: $almost_black;
+  }
+}
+
+@mixin hoverToWhiteText() {
+  transition: color .35s $easeOutExpo;
+  
+  &:hover{
+    color: white;
+  }
+}

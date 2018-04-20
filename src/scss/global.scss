@@ -1,0 +1,102 @@
+// This file will only output generated css once.
+// Put your global html, body, font imports, etc. here.
+
+// Compass reset
+// @import 'compass/reset';
+
+// Import all style stuff
+@import 'config';
+
+// All font imports
+@import 'imports/fonts';
+
+// Default styles
+:global {
+
+  @-ms-viewport {
+    width: device-width;
+  }
+
+  @-o-viewport {
+    width: device-width;
+  }
+
+  @viewport {
+    width: device-width;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  :fullscreen a {
+    display: flex;
+  }
+
+  html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    -webkit-overflow-scrolling: touch;
+
+    &.is-scroll-disabled {
+      overflow: hidden;
+    }
+
+    &.is-grab-cursor {
+      cursor: grabbing;
+    }
+
+    @include gothic-regular;
+    font-size: 62.5%;
+
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    position: relative;
+    margin: 0;
+    width: 100vw;
+  }
+
+  #app {
+    display: block;
+    position: relative;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+  }
+
+  button {
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    background-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+    /* @include user-select('none'); */
+    /* @include appearance(none); */
+    cursor: pointer;
+    font-size: inherit;
+  }
+
+  input,textarea {
+    outline: none;
+  }
+}

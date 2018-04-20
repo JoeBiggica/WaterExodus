@@ -1,0 +1,58 @@
+@import '../../scss/config';
+
+.container {
+	
+	.inner {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+
+		.thumb {
+			width: 178px;
+			height: 178px;
+			flex: none;
+			margin-right: 20px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		.info {
+			
+			.title {
+				@include gothic-bold;
+				font-size: 28px;
+				margin-bottom: 8px;
+			}
+
+			.subtitle {
+				font-family: arial, sans-serif;
+				font-size: 16px;
+				margin-bottom: 10px;
+			}
+
+			.text {
+				font-family: arial, sans-serif;
+				font-size: 16px;
+				line-height: 1.5;
+				margin-bottom: 10px;
+			}
+
+			.button {
+				@include grey-green-button;
+			}
+		}
+
+		@include breakpoint($narrow-browser-and-phone) {
+			flex-direction: column;
+			// text-align: center;
+			// align-items: center;
+
+			.thumb {
+				width: 100px;
+				height: 100px;
+				margin: 0 0 10px;
+			}
+		}		
+	}
+}

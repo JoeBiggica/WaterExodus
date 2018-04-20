@@ -1,0 +1,35 @@
+// Define the grids
+$grid-debug: (
+	image: show, //show or hide
+	output: overlay
+);
+
+$grid-wide: (
+	columns: 12,
+	gutters: .375,
+	global-box-sizing: border-box,
+	container: $content-max-width,
+	debug: $grid-debug
+);
+
+$grid: (
+	columns: 12,
+	gutters: .375,
+	global-box-sizing: border-box,
+	container-position: 10%,
+	debug: $grid-debug
+);
+
+$grid-tablet: (
+	columns: 6,
+	gutters: .5,
+	global-box-sizing: border-box,
+	debug: $grid-debug
+);
+
+$grid-phone: (
+	columns: 1,
+	gutters: 0,
+	global-box-sizing: border-box,
+	debug: $grid-debug
+);

@@ -1,0 +1,45 @@
+@mixin grey-green-button {
+	@include gothic-bold;
+	color: #000;
+	font-size: 16px;
+	background: $background-grey;
+	padding: 4px 6px;
+	min-width: 100px;
+	text-align: center;
+	display: inline-block;
+	border-bottom: 3px solid $artichoke-green;
+	border-top: none;
+    border-right: none;
+    border-left: none;
+	cursor: pointer;
+	transition: all .35s $easeOutExpo;
+
+	&:hover {
+		color: #fff;
+		background: $artichoke-green;
+		border-bottom: 3px solid $background-grey;
+	}
+}
+
+@mixin grey-black-button {
+	@include gothic-bold;
+	color: #000;
+	font-size: 16px;
+	background: $background-grey;
+	padding: 4px 6px;
+	min-width: 100px;
+	text-align: center;
+	display: inline-block;
+	border-bottom: 3px solid #000;
+	border-top: none;
+    border-right: none;
+    border-left: none;
+	cursor: pointer;
+	transition: all .35s $easeOutExpo;
+
+	&:hover {
+		color: #fff;
+		background: #000;
+		border-bottom: 3px solid $background-grey;
+	}
+}

@@ -1,0 +1,17 @@
+@mixin aspect-ratio($width, $height) {
+  $ratio: $width / $height;
+  $padding: 1 / $ratio * 100%;
+
+  &:before {
+    content: '';
+    float: left;
+    padding-bottom: $padding;
+    margin-right:-100%;
+  }
+
+  &:after {
+    content: '';
+    display:table;
+    clear: both;
+  }
+}
