@@ -1,23 +1,22 @@
-@mixin grey-green-button {
-	@include gothic-bold;
+@mixin blue-button {
+	font-family: helvetica;
+	font-weight: bold;
 	color: #000;
 	font-size: 16px;
-	background: $background-grey;
-	padding: 4px 6px;
+	background: white;
+	padding: 10px 14px;
 	min-width: 100px;
 	text-align: center;
 	display: inline-block;
-	border-bottom: 3px solid $artichoke-green;
-	border-top: none;
-    border-right: none;
-    border-left: none;
+	border: 3px solid blue;
+	border-radius: 8px;
 	cursor: pointer;
 	transition: all .35s $easeOutExpo;
 
 	&:hover {
 		color: #fff;
-		background: $artichoke-green;
-		border-bottom: 3px solid $background-grey;
+		background: black;
+		border: 3px solid aqua;
 	}
 }
 

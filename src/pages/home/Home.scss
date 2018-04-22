@@ -12,16 +12,14 @@
 			background: url('../../assets/images/Water_Banner.jpg') no-repeat center center;
 			background-attachment: fixed;
 	    	background-position: top;
-			background-size: 100%;
+			background-size: cover;
 
 			@include breakpoint($medium-browser-and-portrait-tablet) {
-				background-size: 150%;
+		
 			}
 
 			@include breakpoint($narrow-browser-and-phone) {
-				padding-top: 54%;
-				background-attachment: inherit;
-	    		background-position: inherit;
+				
 			}
 
 			.inner {

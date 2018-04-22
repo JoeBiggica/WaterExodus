@@ -30,7 +30,7 @@ export default class TextBanner extends Component {
 						{ title && <h2 className={styles('title')}>{title}</h2> }
 						{ text && <h4 className={text_classname}>{text}</h4> }
 					</div>
-					{ button && <span className={styles('button')}><a href={button.path}>{button.text}</a></span> }
+					{ button && <span className={styles('button')}><a href={button.path} target='_blank'>{button.text}</a></span> }
 					{ image && <div className={styles('image')}><img src={`${image}`} /></div> }
 				</div>
 			</div>

@@ -34,6 +34,19 @@ export default class Home extends Component {
 				<TextBanner {...text_banner_props} />
 				<TextBanner {...text_banner_props} />
 				<TextBanner {...text_banner_props} />
+				<TextBanner {...text_banner_props} />
+				<TextBanner {...text_banner_props} />
+				<TextBanner {...text_banner_props} />
+				<TextBanner {...text_banner_props} />
+				<TextBanner {...text_banner_props} />
+				<TextBanner {...text_banner_props} />
+				<TextBanner {...text_banner_props} />
+				<TextBanner {...text_banner_props} />
+				<TextBanner {...text_banner_props} />
+				<TextBanner {...text_banner_props} />
+				<TextBanner {...text_banner_props} />
+				<TextBanner {...text_banner_props} />
+				<TextBanner {...text_banner_props} />
 			</div>
 		)
 	}
