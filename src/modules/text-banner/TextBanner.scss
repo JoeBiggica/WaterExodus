@@ -2,6 +2,10 @@
 
 .container {
 	padding: 0 $screen-edge-large;
+	background: url('../../assets/images/Water_Mogi.jpg') no-repeat center center;
+	background-attachment: fixed;
+	background-position: top;
+	background-size: cover;
 
 	@include breakpoint($narrow-browser-and-phone) {
 		padding: 0 $screen-edge-small;
@@ -22,6 +26,8 @@
 			.text {
 				@include gothic-bold;
 				font-size: 28px;
+				color: white;
+				text-shadow: 4px 4px 4px #000;
 
 				&.small {
 					font-size: 16px;
